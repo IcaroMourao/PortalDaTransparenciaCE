@@ -1,0 +1,45 @@
+CDU02: Consultar receitas
+
++ Escopo: Portal da Transparência
+
++ Nível: Objetivo do usuário
+
++ Ator principal: Cidadão
+
++ Interessados e interesses:
+- Cidadão: Deseja consultar informações de receitas de forma rápida, precisa e sem erros, e com o mínimo de esforço possível. Deseja a exibição, facilmente visível e compreensível, das informações ali apresentadas.
+- Portal da Tranparência: Deseja apresentar precisamente as informações e satisfazer os interesses do cidadão. Deseja proteção contra falhas para garantir a exibição das informações. Deseja um acesso rápido e preciso no sistema.
+
++ Pré-condições: O usuário ser um cidadão brasileiro.
+
++ Garantia de Sucesso (Pós-condição): Cidadão ver as informações que lhe interessa.
+
++ Cenário de sucesso principal (Fluxo Básico):
+1. Cidadão acessa o portal no navegador.
+2. Cidadão acessa a aba "Receitas".
+3. Cidadão acessa a aba "Receitas do Poder Executivo".
+4. Sistema exibe todas as receitas.
+5. Cidadão realiza filtro.
+6. Sistema exibe as receitas de acordo com o filtro.
+7. Cidadão vizualiza as informações e as imprime (se quiser).
+8. Cidadão fecha o site.
+
++ Extensões (Fluxos Alternativos):
+1. Cidadão acessa a aba "Recursos Recebidos em Transferência".
+    1. Sistema exibe todas os Recursos.
+	2. Cidadão realiza filtro.
+	3. Sistema exibe as receitas de acordo com o filtro.
+	4. Cidadão vizualiza as informações e as imprime (se quiser).
+
+2. Cidadão acessa a aba "Receitas Lançadas".
+    1. Sistema exibe todas as receitas lançadas.
+	2. Cidadão realiza filtro.
+	3. Sistema exibe as receitas de acordo com o filtro.
+	4. Cidadão vizualiza as informações e as imprime (se quiser).
+
+3. Sistema detecta falha na comunicação com o serviço externo do portal.
+      1. Sistema reinicia o serviço e continua.
+      
+      2. Sistema detecta que o serviço não reinicia.
+            1. Sistema avisa o erro.
+            2. Sistema finaliza chamada.

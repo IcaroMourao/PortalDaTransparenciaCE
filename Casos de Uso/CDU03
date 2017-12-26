@@ -1,0 +1,41 @@
+CDU03: Consultar contratos
+
++ Escopo: Portal da Transparência
+
++ Nível: Objetivo do usuário
+
++ Ator principal: Cidadão
+
++ Interessados e interesses:
+- Cidadão: Deseja consultar informações de contratos de forma rápida, precisa e sem erros, e com o mínimo de esforço possível. Deseja a exibição, facilmente visível e compreensível, das informações ali apresentadas.
+- Portal da Tranparência: Deseja apresentar precisamente as informações e satisfazer os interesses do cidadão. Deseja proteção contra falhas para garantir a exibição das informações. Deseja um acesso rápido e preciso no sistema.
+
++ Pré-condições: O usuário ser um cidadão brasileiro.
+
++ Garantia de Sucesso (Pós-condição): Cidadão ver as informações que lhe interessa.
+
++ Cenário de sucesso principal (Fluxo Básico):
+1. Cidadão acessa o portal no navegador.
+2. Cidadão acessa a aba "Contratos".
+3. Cidadão entra com o os dados necessários.
+4. Cidadão efetua a busca.
+5. Portal exibe as informações encontradas na base de dados que dizem respeito à busca.
+6. Cidadão vizualiza as informações.
+7. Cidadão fecha a aba de pesquisa e o site.
+
++ Extensões (Fluxos Alternativos):
+1. Cidadão acessa a aba "Contratos".
+      1.1 Cidadão efetua a busca sem preencher os campos.
+            1. Sistema exibe uma mensagem para preencher algum campo para realização da busca.
+            2. Cidadão entra com os dados necessários para a busca.
+			
+      1.2 Cidadão entra com cnpj não existente na base de dados.
+            1. Sistena rejeita a entrada e avisa que o CNPJ é inválido.
+                  1. Sistema solicita a inserção dos dados novamente.
+			
+2. Sistema detecta falha na comunicação com o serviço externo do portal.
+      1. Sistema reinicia o serviço e continua.
+      
+      2.2 Sistema detecta que o serviço não reinicia.
+            1. Sistema avisa o erro.
+            2. Sistema finaliza chamada.
